@@ -1,0 +1,55 @@
+* {
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+  }
+  .container {
+    border-bottom: 2px solid brown;
+    display: flex;
+    height: 400px;
+    position: relative;
+  }
+  .jump {
+    border: 5px solid rgb(255, 3, 3);
+    width: 100px;
+    height: 100px;
+    margin: auto;
+    margin-left: 30px;
+    margin-bottom: 0px;
+    text-align: center;
+    background-color: rgb(248, 125, 88);
+    border-radius: 100px;
+    position: relative;
+    bottom: 0px;
+    animation: infinite jumpingBalls ease-in-out 2s alternate;
+    border-right: 3px solid black;
+    border-bottom: 3px solid red;
+    border-left: 3px solid green;
+    border-top: 3px solid dodgerblue;
+  }
+  p {
+    color: white;
+    font-weight: bold;
+  }
+  @keyframes jumpingBalls {
+    0% {
+      bottom: 0px;
+      left: 0px;
+      transform: rotate(360deg);
+    }
+    25% {
+      bottom: 250px;
+      left: 100px;
+      transform: rotate(120deg);
+    }
+    75% {
+      bottom: 0px;
+      left: 200px;
+      transform: rotate(-120deg);
+    }
+    100% {
+      bottom: 0px;
+      left: 0px;
+      transform: rotate(-360deg);
+    }
+  }

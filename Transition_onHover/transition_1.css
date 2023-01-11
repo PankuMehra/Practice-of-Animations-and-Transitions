@@ -1,0 +1,24 @@
+.container {
+  display: flex;
+  border: 2px solid black;
+  justify-content: space-evenly;
+}
+.gola {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: width 3s, height 3s, border-radius 3s, justify-content 3s,
+    align-items 3s, font-size 3s, color 3s, background-color 3s;
+  width: 100px;
+  height: 100px;
+  background-color: dodgerblue;
+  color: chocolate;
+}
+.gola:hover {
+  color: red;
+  background-color: lightgreen;
+  font-size: 50px;
+  width: 500px;
+  height: 500px;
+  border-radius: 250px;
+}
