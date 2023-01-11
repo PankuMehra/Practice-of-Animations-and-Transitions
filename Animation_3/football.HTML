@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Football</title>
+    <style>
+      * {
+        padding: 0px;
+        margin: 0px;
+        box-sizing: border-box;
+      }
+      .container {
+        border: 2px solid brown;
+        display: flex;
+        height: 645px;
+        position: relative;
+      }
+      .jump {
+        border: 5px solid rgb(255, 3, 3);
+        width: 100px;
+        height: 100px;
+        margin: auto;
+        margin-left: 0px;
+        margin-bottom: 0px;
+        /* text-align: center; */
+        background-color: rgb(248, 125, 88);
+        border-radius: 100px;
+        position: relative;
+        bottom: 0px;
+        animation: infinite jumpingBalls ease-out 2s;
+        border-right: 3px solid black;
+        border-bottom: 3px solid red;
+        border-left: 3px solid green;
+        border-top: 3px solid dodgerblue;
+      }
+
+      p {
+        color: white;
+        font-weight: bold;
+      }
+      #football {
+        width: 100%;
+      }
+      #kicker img {
+        width: 180%;
+      }
+      #net img {
+        background-color: transparent;
+        /* border: 3px solid red; */
+        /* background-color: red; */
+        width: 100%;
+      }
+      #net {
+        background-color: transparent;
+        width: 600px;
+        /* border: 3px solid green; */
+      }
+      @keyframes jumpingBalls {
+        0% {
+          bottom: 220px;
+          left: 0px;
+          transform: rotate(0deg);
+        }
+        100% {
+          bottom: 300px;
+          left: 900px;
+          transform: rotate(2000deg);
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div id="kicker" class="kicker">
+        <img src="./kickstart.png" alt="kicker" />
+      </div>
+      <div class="jump">
+        <img id="football" src="./football.webp" alt="football" />
+      </div>
+      <div id="net" class="net"><img src="./net.png" alt="net" /></div>
+    </div>
+  </body>
+</html>
